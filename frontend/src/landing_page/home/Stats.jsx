@@ -40,10 +40,12 @@ const Stats = () => {
             style={{ width: "100%", height: "auto" }}
           />
           <div className="text-center d-flex justify-content-between">
-            <a href="" className="mx-3 text-decoration-none">
+            <a href="" className="mx-3 text-decoration-none" style={{ color: "#0d6efd", textDecoration: "none", fontWeight: 500, ":hover": { color: "#535bf2" } }}>
               Explore our products <i className="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="" className="mx-3 text-decoration-none">Try demo <i className="fa-solid fa-arrow-right"></i></a>
+            <a href="" className="mx-3 text-decoration-none" style={{ color: "#0d6efd", textDecoration: "none", fontWeight: 500, ":hover": { color: "#535bf2" } }}>
+              Try demo <i className="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
