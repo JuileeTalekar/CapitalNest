@@ -69,6 +69,7 @@ const Awards = () => {
             </div>
           </div>
 
+
           {/* Image Section */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative max-w-lg w-full">
@@ -93,4 +94,6 @@ const Awards = () => {
   );
 };
 
+
 export default Awards;
+
