@@ -1,7 +1,17 @@
 import React, { useState } from "react";
+import {Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navigationItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Products", path: "/products" },
+    { name: "Pricing", path: "/pricing" },
+    { name: "Support", path: "/support" }
+  ];
+
 
   return (
     <>
@@ -33,15 +43,15 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {["Home", "About", "Products", "Pricing", "Support"].map((item) => (
-              <a
-                key={item}
-                href="#"
+            {navigationItems.map((item) => (
+              <Link
+                 key={item.name}
+                to={item.path}
                 className="text-gray-600 hover:text-gray-900 font-medium transition-colors "
                 style={{ textDecoration: "none" }}
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </div>
 
@@ -50,9 +60,11 @@ const Navbar = () => {
             <button className="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium">
               Login
             </button>
-            <button className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
+            <Link className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+            style={{ textDecoration: "none" }}
+              to="/signup">
               Sign Up
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,25 +84,37 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200">
-            <div className="px-6 py-4 space-y-3">
-              {["Home", "About", "Products", "Pricing", "Support"].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="block text-gray-600 hover:text-gray-900 font-medium py-2 no-underline"
+          <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
+            <div className="px-6 py-6 space-y-1">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 font-medium py-3 px-4 rounded-lg transition-all duration-200"
+                  style={{ textDecoration: "none" }}
                   onClick={() => setIsOpen(false)}
                 >
-                  {item}
-                </a>
+                  {item.name}
+                </Link>
               ))}
-              <div className="pt-4 space-y-3 border-t border-gray-200">
-                <button className="w-full text-left text-gray-600 hover:text-gray-900 font-medium py-2">
+              
+              <div className="pt-6 mt-6 space-y-4 border-t border-gray-200">
+                <Link 
+                  to="/login" 
+                  className="block w-full text-center text-gray-600 hover:text-blue-600 hover:bg-blue-50 font-medium py-3 px-4 rounded-lg transition-all duration-200"
+                  style={{ textDecoration: "none" }}
+                  onClick={() => setIsOpen(false)}
+                >
                   Login
-                </button>
-                <button className="w-full px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                </Link>
+                <Link 
+                  to="/signup" 
+                  className="block w-full text-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+                  style={{ textDecoration: "none" }}
+                  onClick={() => setIsOpen(false)}
+                >
                   Sign Up
-                </button>
+                </Link>
               </div>
             </div>
           </div>
