@@ -1,19 +1,21 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import HomePage from './landing_page/home/HomePage'
-import AboutPage from './landing_page/about/AboutPage';
-import ProductsPage from './landing_page/products/ProductsPage';
-import PricingPage from './landing_page/pricing/PricingPage';
-import Signup from './landing_page/signup/Signup';
-import SupportPage from './landing_page/support/SupportPage';
-import ScrollToTop from "./ScrollToTop";
-import Navbar from "./landing_page/Navbar";
+import HomePage from './home/HomePage'
+import AboutPage from './about/AboutPage';
+import ProductsPage from './products/ProductsPage';
+import PricingPage from './pricing/PricingPage';
+import Signup from './signup/Signup';
+import SupportPage from './support/SupportPage';
+import ScrollToTopp from "./ScrollToTopp";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import "../index.css"
 
 function Info() {
     return ( 
         <>
         <Navbar />
-        <ScrollToTop />
+        <ScrollToTopp />
         <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
