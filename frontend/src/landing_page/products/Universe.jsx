@@ -87,7 +87,7 @@ const Universe = () => {
           </a>
         </div>
         <div>
-          <button className="btn btn-primary fs-5 resbtn">
+          <button className="btn btn-primary fs-5 resbtn mb-5">
             Sign up for free
           </button>
         </div>
