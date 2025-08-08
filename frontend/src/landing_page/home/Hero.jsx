@@ -28,7 +28,7 @@ const Hero = () => {
             </p>
 
             {/* CTA Button */}
-<button className="btn btn-primary w-48 hover:bg-blue-700 transition-colors duration-300 text-white text-xl font-bold px-6 py-3 rounded-lg">
+<button className="w-48 bg-blue-600 hover:bg-blue-700 transition-colors duration-300 text-white text-xl font-bold px-6 py-3 rounded-lg">
   Get Started
 </button>
 

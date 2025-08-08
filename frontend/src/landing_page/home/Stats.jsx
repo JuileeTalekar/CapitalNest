@@ -2,49 +2,50 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className="container p-5">
-      <div className="row stats">
-        <div className="stats col-12 col-lg-6">
-          <h1 className="mb-5">
-            <span style={{ color: "#0d6efd" }}>Trust</span> with confidence
+    <div className="max-w-5xl mx-auto p-8 bg-white">
+      <div className="flex flex-col md:flex-row gap-10">
+        <div className="md:w-1/2 mb-8 md:mb-0">
+          <h1 className="mb-6 text-3xl font-bold">
+            <span className="text-blue-600">Trust</span> with confidence
           </h1>
-          <h2 className="fs-4">Customer-first always</h2>
-          <p className="text-muted">
-            We prioritize our customers' needs and provide exceptional service,
-            ensuring their investments are secure and profitable.
+          <h2 className="text-lg font-semibold mb-2">Customer-first always</h2>
+          <p className="text-gray-500 mb-4">
+            We prioritize our customers' needs and provide exceptional service, ensuring their investments are secure and profitable.
           </p>
 
-          <h2 className="fs-4">No spam or gimmicks</h2>
-          <p className="text-muted">
-            We believe in transparency and honesty, offering straightforward
-            investment options without any hidden fees or misleading promotions.
+          <h2 className="text-lg font-semibold mb-2">No spam or gimmicks</h2>
+          <p className="text-gray-500 mb-4">
+            We believe in transparency and honesty, offering straightforward investment options without any hidden fees or misleading promotions.
           </p>
 
-          <h2 className="fs-4">The Prospera universe</h2>
-          <p className="text-muted">
-            Our comprehensive platform offers a wide range of financial products
-            and services, catering to all your investment needs in one place.
+          <h2 className="text-lg font-semibold mb-2">The Prospera universe</h2>
+          <p className="text-gray-500 mb-4">
+            Our comprehensive platform offers a wide range of financial products and services, catering to all your investment needs in one place.
           </p>
 
-          <h2 className="fs-4">Do better with money</h2>
-          <p className="text-muted">
-            We provide expert advice and tools to help you make informed
-            decisions, maximizing your returns and achieving your financial
-            goals.
+          <h2 className="text-lg font-semibold mb-2">Do better with money</h2>
+          <p className="text-gray-500">
+            We provide expert advice and tools to help you make informed decisions, maximizing your returns and achieving your financial goals.
           </p>
         </div>
-        <div className="stats col-12 col-lg-6">
+        <div className="md:w-1/2 flex flex-col items-center justify-center">
           <img
             src="/media/Images/ecosystem.png"
             alt="Prospera Ecosystem"
-            style={{ width: "100%", height: "auto" }}
+            className="w-full h-auto rounded-lg shadow"
           />
-          <div className="text-center d-flex justify-content-between">
-            <a href="" className="mx-3 text-decoration-none" style={{ color: "#0d6efd", textDecoration: "none", fontWeight: 500, ":hover": { color: "#535bf2" } }}>
-              Explore our products <i className="fa-solid fa-arrow-right"></i>
+          <div className="flex flex-row justify-between w-full mt-6">
+            <a
+              href="#"
+              className="mx-3 text-blue-600 font-medium hover:text-indigo-500 transition-colors flex items-center gap-2"
+            >
+              Explore our products <span className="inline-block">→</span>
             </a>
-            <a href="" className="mx-3 text-decoration-none" style={{ color: "#0d6efd", textDecoration: "none", fontWeight: 500, ":hover": { color: "#535bf2" } }}>
-              Try demo <i className="fa-solid fa-arrow-right"></i>
+            <a
+              href="#"
+              className="mx-3 text-blue-600 font-medium hover:text-indigo-500 transition-colors flex items-center gap-2"
+            >
+              Try demo <span className="inline-block">→</span>
             </a>
           </div>
         </div>

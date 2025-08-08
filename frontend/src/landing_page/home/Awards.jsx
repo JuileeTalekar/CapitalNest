@@ -61,7 +61,7 @@ const Awards = () => {
               <p className="text-sm text-gray-500 mb-6">Featured in leading publications</p>
               <div className="max-w-md">
                 <img 
-                  src="media/Images/pressLogos.png" 
+                  src="/media/Images/pressLogos.png" 
                   alt="Press coverage" 
                   className="w-full h-auto opacity-60 hover:opacity-80 transition-opacity duration-300"
                 />

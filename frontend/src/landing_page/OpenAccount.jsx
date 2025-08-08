@@ -2,11 +2,11 @@ import React from "react";
 
 const OpenAccount = () => {
   return (
-    <div className="container flex-col flex items-center justify-center text-center min-h-screen p-4">
+  <div className="flex flex-col items-center justify-center text-center min-h-screen p-4 bg-white">
       {/* Hero Content */}
       <div className="max-w-4xl mx-auto space-y-8">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Open a <span style={{ color: "#0d6efd" }}>CapitalNest</span> account
+          Open a <span className="text-blue-600">CapitalNest</span> account
         </h1>
 
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -14,7 +14,7 @@ const OpenAccount = () => {
         </p>
 
         {/* CTA Button */}
-        <button className="btn btn-primary w-48 hover:bg-blue-700 transition-colors duration-300 text-white text-xl font-bold px-6 py-3 rounded-lg">
+        <button className="w-48 bg-blue-600 hover:bg-blue-700 transition-colors duration-300 text-white text-xl font-bold px-6 py-3 rounded-lg shadow">
           Sign up Now
         </button>
       </div>
