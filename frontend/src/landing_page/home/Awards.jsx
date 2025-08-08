@@ -80,7 +80,7 @@ const Awards = () => {
               {/* Main image */}
               <div className="relative bg-white rounded-2xl p-8 shadow-xl">
                 <img
-                  src="media/Images/largestBroker.svg"
+                  src="/media/Images/largestBroker.svg"
                   alt="India's largest broker"
                   className="w-full h-auto"
                 />

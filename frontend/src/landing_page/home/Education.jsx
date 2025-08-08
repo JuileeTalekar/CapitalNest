@@ -16,7 +16,7 @@ const Education = () => {
               {/* Main image */}
               <div className="relative bg-white rounded-2xl p-8 shadow-xl">
                 <img
-                  src="media/Images/education.svg"
+                  src="/media/Images/education.svg"
                   alt="Financial Education"
                   className="w-full h-auto"
                 />

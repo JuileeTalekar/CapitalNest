@@ -5,11 +5,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigationItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Products", path: "/products" },
-    { name: "Pricing", path: "/pricing" },
-    { name: "Support", path: "/support" }
+    { name: "Home", path: "/landing/" },
+    { name: "About", path: "/landing/about" },
+    { name: "Products", path: "/landing/products" },
+    { name: "Pricing", path: "/landing/pricing" },
+    { name: "Support", path: "/landing/support" }
   ];
 
 
@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="#" className="flex items-center gap-3 group" style={{ textDecoration: "none" }}>
           <div className="relative w-12 h-12 bg-gradient-to-br from-white via-gray-100 to-white rounded-xl shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform">
             <img
-              src="logo.svg"
+              src="/logo.svg"
               alt="CapitalNest Logo"
               className="w-8 h-8 transition-all group-hover:scale-105 drop-shadow-md"
             />

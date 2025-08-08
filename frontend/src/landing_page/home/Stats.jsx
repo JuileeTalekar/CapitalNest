@@ -35,7 +35,7 @@ const Stats = () => {
         </div>
         <div className="stats col-12 col-lg-6">
           <img
-            src="media/Images/ecosystem.png"
+            src="/media/Images/ecosystem.png"
             alt="Prospera Ecosystem"
             style={{ width: "100%", height: "auto" }}
           />

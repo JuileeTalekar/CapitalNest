@@ -1,15 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Home from "./dashboard/components/Home";
+import Home from "./dashboard/components/Home";
 import Info from "./landing_page/Info";
+
+import "./dashboard/constants/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/*" element={<Info />} />
-      {/* <Route path="/*" element={<Home />} /> */}
+      <Route path="/landing/*" element={<Info />} />
+      <Route path="/*" element={<Home/>} />
     </Routes>
   </BrowserRouter>
 );

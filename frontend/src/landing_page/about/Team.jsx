@@ -9,8 +9,7 @@ const Team = () => {
  
       <div className="row p-5 text-muted">
         <div className="col-12 col-lg-6 px-5 text-center d-flex flex-column align-items-center">
-          <img src="/media/Images/Founder.jpg" alt="founder" style={{width:"300px", height:"300px", borderRadius:"50%", objectFit:"cover"}}/>
-          <h4 className="mt-3">Juilee Talekar</h4>
+        <img src="/media/Images/founder.jpg" alt="founder" style={{width:"300px", height:"300px", borderRadius:"50%", objectFit:"cover"}}/>          <h4 className="mt-3">Juilee Talekar</h4>
           <h6>Founder, CEO</h6>
         </div>
         <div className="col-12 col-lg-6 d-flex align-items-center mt-5 mt-lg-0 text-center text-lg-start">

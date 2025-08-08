@@ -11,7 +11,7 @@ const Hero = () => {
           {/* Hero Image */}
 
           <img
-            src="media/Images/homeHero.png"
+            src="/media/Images/homeHero.png"
             alt="Hero Image"
             className="mb-5"
           />
