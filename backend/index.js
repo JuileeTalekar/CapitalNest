@@ -14,7 +14,7 @@ const port = process.env.PORT || 3002;
 const url = process.env.MONGO_URL;
 
 
-app.use(cors());
+app.use(express.json());
 app.use(bodyParser.json());
 
 
@@ -43,10 +43,9 @@ app.post(`/newOrder`, async (req, res) => {
     mode: req.body.mode,
   });
   await newOrder.save();
+
   res.json(newOrder);
 });
-
-
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

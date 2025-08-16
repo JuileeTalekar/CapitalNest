@@ -15,10 +15,7 @@ const UserSchema = new Schema({
     type: String,
     required: [true, "Your password is required"],
   },
-  walletBalance: {
-    type: Number,
-    default: 0, // Initialize to 0 for new users
-  },
+  
   createdAt: {
     type: Date,
     default: new Date(),
